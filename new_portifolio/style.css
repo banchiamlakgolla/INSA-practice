@@ -10,7 +10,13 @@ html{
 
 body{
     font-family:"Poppins",sans-serif;
-    background:#0D1B2A;
+    background:linear-gradient(
+        135deg,
+        #3369b9,
+        #071A33 50%,
+        #F5B942
+    );
+    background-attachment:fixed;
     color:#E6EDF5;
     line-height:1.7;
 }
@@ -31,7 +37,12 @@ ul{
 
 
 header{
-    background:#16263B;
+    background:linear-gradient(
+        135deg,
+        #F5B942,
+        #071A33 50%,
+        #3761a1
+    );
     padding:20px 8%;
     box-shadow:0 6px 20px rgba(0,0,0,.35);
 }
@@ -44,7 +55,7 @@ nav{
 }
 
 .logo h2{
-    color:#3BA9FF;
+    color:#dfe5e9;
     font-size:30px;
     font-weight:700;
 }
@@ -99,13 +110,9 @@ nav{
 
     width:250px;
     height:250px;
-
     border-radius:50%;
-
-    object-fit:cover;
-
-    border:5px solid #3BA9FF;
-
+     object-fit:cover;
+    border:5px solid #283e4e;
     box-shadow:0 10px 25px rgba(0,0,0,.45);
 
     transition:.4s;
@@ -126,182 +133,129 @@ nav{
 }
 
 .hello{
-
-    color:#66C2FF;
-
-    font-size:18px;
-
-    margin-bottom:10px;
+   color:#688192;
+   font-size:18px;
+   margin-bottom:10px;
 
 }
 
 .hero-content h1{
-
-    font-size:52px;
-
-    color:#FFFFFF;
-
-    margin-bottom:12px;
+     font-size:52px;
+     color:#FFFFFF;
+     margin-bottom:12px;
 
 }
 
 .hero-content h3{
-
-    color:#D3E8F7;
-
-    font-size:28px;
-
-    font-weight:600;
-
-    margin-bottom:18px;
+      color:#D3E8F7;
+      font-size:28px;
+      font-weight:600;
+      margin-bottom:18px;
 
 }
 
 .role{
-
-    color:#3BA9FF;
-
-    font-size:20px;
-
-    margin-bottom:20px;
+   color:#3BA9FF;
+   font-size:20px;
+   margin-bottom:20px;
 
 }
 
 .description{
-
     max-width:700px;
-
     font-size:17px;
-
     color:#CFD9E5;
-
     margin-bottom:35px;
 
 }
 
 
 .hero-buttons{
-
-    display:flex;
-
-    gap:20px;
-
-    flex-wrap:wrap;
+   display:flex;
+   gap:20px;
+  flex-wrap:wrap;
 
 }
 
 .btn{
-
-    background:#3BA9FF;
-
-    color:#08131F;
-
-    padding:13px 28px;
-
-    border-radius:10px;
-
-    font-weight:700;
-
-    transition:.3s;
+   background:#3BA9FF;
+   color:#08131F;
+   padding:13px 28px;
+   border-radius:10px;
+   font-weight:700;
+   transition:.3s;
 
 }
 
 .btn:hover{
-
-    background:#62BEFF;
-
-    transform:translateY(-3px);
+  background:#62BEFF;
+  transform:translateY(-3px);
 
 }
 
 .btn-outline{
-
-    border:2px solid #8393a0;
-
-    color:#3BA9FF;
-
-    padding:13px 28px;
-
-    border-radius:10px;
-
-    font-weight:700;
-
-    transition:.3s;
+  border:2px solid #8393a0;
+  color:#3BA9FF;
+  padding:13px 28px;
+  border-radius:10px;
+  font-weight:700;
+  transition:.3s;
 
 }
 
 .btn-outline:hover{
-
     background:#3BA9FF;
-
     color:#08131F;
 
 }
 
 
 section{
-
     width:88%;
-
     margin:60px auto;
-
-    background:#16263B;
-
+    background:linear-gradient(
+        135deg,
+        #F5B942,
+        #071A33 50%,
+        #3761a1
+    );
     padding:40px;
-
     border-radius:16px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.30);
-
+    border:1px solid rgba(245,185,66,.25);
+    box-shadow:0 10px 30px rgba(0,0,0,.40);
+     backdrop-filter:blur(10px);
 }
 
 section h2{
-
     text-align:center;
-
     font-size:34px;
-
-    color:#3BA9FF;
-
+    color:#36719e;
     margin-bottom:30px;
-
     position:relative;
 
 }
 
 section h2::after{
-
     content:"";
-
     width:70px;
-
     height:4px;
-
     background:#3BA9FF;
-
     display:block;
-
     margin:10px auto;
-
     border-radius:10px;
 
 }
 
 section p{
-
     color:#D4DEE8;
-
     font-size:17px;
 
 }
 
 
 #about p{
-
     max-width:900px;
-
     margin:auto;
-
     text-align:center;
 
 }
@@ -431,9 +385,7 @@ section p{
     border-radius:8px;
 }
 
-/* ==========================
-   EDUCATION
-========================== */
+/*  EDUCATION */
 
 #education{
     text-align:center;
@@ -445,9 +397,7 @@ section p{
     font-size:26px;
 }
 
-/* ==========================
-   CONTACT
-========================== */
+/* CONTACT */
 
 #contact{
     text-align:center;
@@ -471,8 +421,7 @@ section p{
     color:#3BA9FF;
 }
 
-
-   FOOTER
+  /* FOOTER */
 
 footer{
     margin-top:70px;
@@ -482,9 +431,7 @@ footer{
     color:#AFC5D8;
 }
 
-/* ==========================
-   SCROLLBAR
-========================== */
+/* SCROLLBAR */
 
 ::-webkit-scrollbar{
     width:10px;
@@ -495,13 +442,11 @@ footer{
 }
 
 ::-webkit-scrollbar-thumb{
-    background:#3BA9FF;
+    background:#3f6e92;
     border-radius:20px;
 }
 
-/* ==========================
-   RESPONSIVE
-========================== */
+/* RESPONSIVE */
 
 @media(max-width:1000px){
 
